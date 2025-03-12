@@ -20,27 +20,25 @@ export default function TableComponent() {
   return (
     <div className="bg-white p-6 mt-6 shadow-md rounded-lg">
     
-<div className="flex justify-between items-center mb-4 bg-gray-100">
-
-  <h2 className="text-lg font-bold">Application</h2>
- 
-  <div className="p-2 rounded-lg  flex space-x-4">
-    {tabs.map((tab) => (
-      <button
-        key={tab}
-        className={`px-4 py-2 rounded-full text-sm font-medium ${
-          activeTab === tab
-            ? "bg-green-600 text-white"
-            : "bg-transparent text-gray-600 hover:bg-gray-100"
-        }`}
-        onClick={() => setActiveTab(tab)}
-      >
-        {tab}
-      </button>
-    ))}
-  </div>
-</div>
-
+      <div className="flex justify-between items-center mb-4 bg-gray-100">
+        <h2 className="text-lg font-bold">Application</h2>
+       
+        <div className="p-2 rounded-lg flex space-x-4">
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              className={`px-4 py-2 rounded-full text-sm font-medium ${
+                activeTab === tab
+                  ? "bg-green-600 text-white"
+                  : "bg-transparent text-gray-600 hover:bg-gray-100"
+              }`}
+              onClick={() => setActiveTab(tab)}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
+      </div>
 
       <div className="overflow-x-auto mt-4">
         <table className="w-full border-collapse">
@@ -75,9 +73,8 @@ export default function TableComponent() {
                   </span>
                 </td>
 
-         
                 <td className="px-4">
-                  <span className="border border-yellow-500 text-yellow-500 text-xs px-3 py-1 rounded-full">
+                  <span className="bg-amber-50 border border-amber-300 text-amber-600 text-xs px-3 py-1 rounded-full">
                     {row.status}
                   </span>
                 </td>
