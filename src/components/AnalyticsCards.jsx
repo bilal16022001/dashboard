@@ -1,4 +1,5 @@
 import React from 'react';
+import arrowright from '../assets/arrowright.png';
 
 export default function AnalyticsCards() {
   const stats = [
@@ -10,6 +11,23 @@ export default function AnalyticsCards() {
 
   return (
     <div className="w-full">
+     <div className="flex justify-between p-4 items-center">
+     <p className="text-[#1F2937] text-sm">Analytics</p>
+    
+<div className="relative">
+  <select
+    className="appearance-none bg-white border border-gray-300 text-black text-sm px-4 py-2 rounded-md w-28 cursor-pointer focus:outline-none focus:ring-1 focus:ring-gray-400"
+  >
+    <option>March</option>
+    <option>April</option>
+    <option>May</option>
+  </select>
+  
+  <div className="absolute inset-y-0 right-2 flex items-center pointer-events-none">
+    <img src={arrowright} alt="Dropdown Arrow" className="h-4 w-4" />
+  </div>
+</div>
+</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat, idx) => (
           <div key={idx} className="bg-white rounded-lg shadow p-6">

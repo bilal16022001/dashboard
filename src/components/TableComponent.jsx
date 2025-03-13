@@ -18,12 +18,12 @@ export default function TableComponent() {
   ];
 
   return (
-    <div className="bg-white p-6 mt-6 shadow-md rounded-lg">
+    <div className=" p-6 mt-6  rounded-lg">
     
-      <div className="flex justify-between items-center mb-4 bg-gray-100">
+      <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-bold">Application</h2>
        
-        <div className="p-2 rounded-lg flex space-x-4">
+        <div className="p-2  rounded-lg flex space-x-4">
           {tabs.map((tab) => (
             <button
               key={tab}
@@ -40,10 +40,10 @@ export default function TableComponent() {
         </div>
       </div>
 
-      <div className="overflow-x-auto mt-4">
-        <table className="w-full border-collapse">
+      <div className="bg-white  mt-4 border border-gray-300 rounded-lg">
+      <table className="w-full border-collapse">
           <thead>
-            <tr className="bg-gray-100 text-left border-b">
+            <tr className=" text-left border-b">
               <th className="py-3 px-4">
                 <input type="checkbox" className="w-4 h-4" />
               </th>

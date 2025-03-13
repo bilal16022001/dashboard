@@ -43,7 +43,7 @@ export default function Sidebar() {
       <img
   src={Avatar}
   alt="Avatar"
-  className="w-[55px] h-[55px]"
+  className="w-[64px] h-[42px]"
 />
 
       </div>

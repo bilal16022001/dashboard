@@ -6,7 +6,7 @@ import TableComponent from "./components/TableComponent";
 
 export default function App() {
   return (
-    <div className="flex h-screen w-screen bg-gray-100">
+    <div className="flex min-h-screen w-screen w-full bg-gray-100 overflow-x-hidden">
 
       <Sidebar />
 
@@ -19,13 +19,16 @@ export default function App() {
         </div>
 
   
-        <div className="bg-white p-6 mt-6 shadow-md rounded-lg w-full">
-          <h2 className="text-lg font-bold">Monthly Overview</h2>
-          <ChartComponent />
-        </div>
+        <>
+  <div className="bg-white p-6 mt-5 border border-gray-300 rounded-lg w-full">
+    <h2 className="text-lg font-bold">Monthly Overview</h2>
+    <ChartComponent />
+  </div>
+  <hr className="mt-4 border-t border-gray-300 w-full" />
+</>
 
      
-        <div className="bg-white p-6 mt-6 rounded-lg w-full">
+        <div className="p-6  rounded-lg w-full">
           <TableComponent />
         </div>
       </div>
